@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Hoteller is a cloud based Hotel Property Management System made to make your life as a hotel owner easier."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/test.css" />
+
+    <title>Hotellier PMS &mdash; Cloud</title>
+  </head>
+  <body>
+    <header>
+      <nav role="navigation" class="navbar navbar-default fixed-top">
+        <a href="/" class="navbar-brand">
+          <img src="img/Logo.webp" alt="hotel logo" class="logo logo-navbar" />
+        </a>
+        <div class="container grid align-self-start">
+          <div class="navbar-search-container">
+            <ul class="navbar-help-list">
+              <li>
+                <ion-icon
+                  name="person-circle"
+                  class="navbar-help-icon"
+                ></ion-icon>
+                <a href="mailto:Dean@hpms.com" class="nav-help-supervisor"
+                  >Dean@hpms.com</a
+                >
+              </li>
+              <li>
+                <ion-icon name="call" class="nav-help-icon"></ion-icon>
+                <a href="#" class="nav-help-link">Employees</a>
+              </li>
+              <li>
+                <ion-icon name="headset" class="nav-help-icon"></ion-icon>
+                <a href="#" class="nav-help-link">Support</a>
+              </li>
+              <li>
+                <ion-icon name="help-circle" class="nav-help-icon"></ion-icon>
+                <a href="#" class="nav-help-link"> Knowledge Base</a>
+              </li>
+            </ul>
+            <form class="nav-help-search">
+              <button type="submit" class="btn btn--search">
+                <ion-icon name="search"></ion-icon> Search Today
+              </button>
+              <input
+                type="text"
+                placeholder="Search for.."
+                name="search"
+                class="search-bar"
+              />
+            </form>
+          </div>
+          <div>
+            <div class="btn--logout-container">
+              <a href="#" class="btn btn--logout">
+                <ion-icon name="power" class="btn--logout-icon"></ion-icon>Log
+                Out
+              </a>
+            </div>
+            <div class="nav-date">10/1/2024</div>
+          </div>
+        </div>
+
+        <nav class="br-flex">
+          <ul class="nav-list nav--main">
+            <li><a href="#" class="nav-link">Reservations</a></li>
+            <li><a href="#" class="nav-link">Groups</a></li>
+            <li><a href="#" class="nav-link">House Chart</a></li>
+            <li><a href="#" class="nav-link">Reports</a></li>
+          </ul>
+        </nav>
+
+        <div class="department-container">
+          <div class="nav-department clip-path-left-point">
+            <button class="btn btn--department clip-path-left-point">
+              Front Office <ion-icon name="chevron-down"></ion-icon>
+            </button>
+          </div>
+          <nav class="nav-department--dropdown">
+            <ul class="department-list">
+              <li><a href="#">Front Office</a></li>
+              <li><a href="#">Housekeeping</a></li>
+              <li><a href="#">Maintenance</a></li>
+              <li><a href="#">Accounting</a></li>
+              <li><a href="#">Management</a></li>
+              <li><a href="#">Admin</a></li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Reservations Sub Nav -->
+    <nav class="br-flex sub">
+      <ul class="nav-list nav--sub">
+        <li><a href="#" class="nav-link">Search</a></li>
+        <li><a href="#" class="nav-link">New Res</a></li>
+        <li><a href="#" class="nav-link">Availability</a></li>
+        <li><a href="#" class="nav-link">Preprint Reg Card</a></li>
+        <li><a href="#" class="nav-link">Wait List</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN SECTION -->
+
+    <main class="main">
+      <div class="grid-layout">
+        <div class="buttons-wrapper">
+          <div class="dashboard-buttons">
+            <div class="small-btn-container">
+              <a href="#" class="dash-btn--small departures"
+                ><span class="dash-btn-number">8</span
+                ><span class="dash-btn-label">departures</span></a
+              >
+              <a href="#" class="dash-btn--small activities"
+                ><span class="dash-btn-number">0</span
+                ><span class="dash-btn-label">activities</span></a
+              >
+            </div>
+
+            <a href="#" class="dash-btn--large arrivals"
+              ><span class="dash-btn-number-large">8</span
+              ><span class="dash-btn-label">arrivals</span></a
+            >
+            <div class="small-btn-container">
+              <a href="#" class="dash-btn--small vip"
+                ><span class="dash-btn-number">0</span
+                ><span class="dash-btn-label">vip</span></a
+              >
+              <a href="#" class="dash-btn--small packages"
+                ><span class="dash-btn-number">7</span
+                ><span class="dash-btn-label">packages</span></a
+              >
+            </div>
+          </div>
+
+          <div class="dashboard-buttons">
+            <div class="small-btn-container">
+              <a href="#" class="dash-btn--small departures"
+                ><span class="dash-btn-number">11</span><span>in house</span></a
+              >
+              <a href="#" class="dash-btn--small activities"
+                ><span class="dash-btn-number">0</span
+                ><span>out of order</span></a
+              >
+            </div>
+
+            <a href="#" class="dash-btn--large arrivals"
+              ><span class="dash-btn-number-large">100%</span
+              ><span>Occupancy</span></a
+            >
+            <div class="small-btn-container">
+              <a href="#" class="dash-btn--small vip"
+                ><span class="dash-btn-number">0</span
+                ><span>rooms available</span></a
+              >
+              <a href="#" class="dash-btn--small packages"
+                ><span class="dash-btn-number">5/10</span
+                ><span>group pickups</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="section-wrapper">
+          <section class="logs-section">
+            <div class="content-wrapper">
+              <div class="tabs">
+                <button class="tab active" onclick="showLogTab('logs')">
+                  Logs
+                </button>
+                <button class="tab" onclick="showTab('add')">Add</button>
+              </div>
+
+              <div class="section-content" id="logs">
+                <form class="logs-form">
+                  <div class="form-field">
+                    <label for="department">Department</label>
+                    <select id="department" name="department">
+                      <option value="supervisor">Supervisor</option>
+                      <option value="admin">Admin</option>
+                      <option value="housekeeping">Housekeeping</option>
+                      <!-- Add more options as needed -->
+                    </select>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="date">Date</label>
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      value="2024-10-01"
+                    />
+                  </div>
+                  <div class="log-entry">
+                    <p>
+                      John, please make sure you log out after your shift. Thx!
+                    </p>
+                    <span class="log-author">— Admin @ 07/01/18 2:00 PM</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <section class="mail-section">
+            <div class="content-wrapper">
+              <div class="tabs">
+                <button class="tab">New</button>
+                <button class="tab active">Inbox</button>
+                <button class="tab">Outbox</button>
+              </div>
+              <div class="section-content" id="inbox">
+                <div class="inbox-msg unread">
+                  <ion-icon
+                    name="mail"
+                    class="msg-icon msg-icon--mail"
+                  ></ion-icon>
+                  <span class="msg-name">Winchester, Dean</span>
+                  <span class="msg-date">10/01/2024</span>
+                  <ion-icon
+                    name="trash"
+                    class="msg-icon msg-icon--trash"
+                  ></ion-icon>
+                  <span class="msg-preview"
+                    >Sam, please find bobby. It's Important that...
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-three">
+            <div class="content-wrapper">
+              <div class="tabs">
+                <button class="tab active">Events</button>
+                <button class="tab">Add</button>
+              </div>
+              <div id="calendar" class="calendar"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer fixed-bottom">
+      <div class="footer-content">
+        <a href="#" class="footer-logo-link">
+          <img src="/img/Logo.webp" class="footer-logo" />
+        </a>
+        <nav class="footer-contact">
+          <span>Contact Us:</span>
+          <a href="#" class="footer-link">Support</a>
+          <span>|</span>
+          <a href="#" class="footer-link">Sales</a>
+        </nav>
+        <a href="#" class="footer-link">Privacy Policy</a>
+      </div>
+    </footer>
+
+    <!-- ION ICON IMPORT -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css"
+    />
+    <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+    <!--    -->
+
+    <script src="js/calendar.js" defer></script>
+  </body>
+</html>
