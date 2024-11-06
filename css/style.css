@@ -39,6 +39,15 @@ body {
 
 /* general? */
 
+.fixed-bottom {
+  color: #7e868d;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  z-index: 1002;
+}
+
 .align-self-start {
   align-self: flex-start;
 }
@@ -604,7 +613,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  color: #7e868d;
   background-color: #f8feff;
   height: 5rem;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),

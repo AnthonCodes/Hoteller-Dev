@@ -1,3 +1,20 @@
-{
+# Node modules
+node_modules/
+
+# Logs and OS files
+logs/
+*.log
+.DS_Store
+
+# Ignore .env file with sensitive info
+.env
+
+# Build files
+dist/
+build/
+
+# Ignore local VS Code settings
+.vscode/
+
+# Ignore img src
 .psd
-}
