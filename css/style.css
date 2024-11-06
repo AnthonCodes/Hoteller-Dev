@@ -48,6 +48,14 @@ body {
   z-index: 1002;
 }
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 .align-self-start {
   align-self: flex-start;
 }
@@ -528,20 +536,20 @@ body {
   gap: 1rem;
 }
 
-.form-field {
+.log-field {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.form-field label {
+.log-field label {
   width: 8rem;
   font-size: 1.4rem;
   color: #333;
 }
 
-.form-field select,
-.form-field input[type="date"] {
+.log-field select,
+.log-field input[type="date"] {
   flex-grow: 1;
   font-size: 1.4rem;
   padding: 0.5rem;

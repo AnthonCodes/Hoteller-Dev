@@ -1,1 +1,56 @@
+.reservation-container {
+  display: flex;
+  gap: 1rem;
+}
 
+.res-nav {
+  background: #cccc;
+  margin-left: 1rem;
+}
+
+.res-nav-list {
+  background-color: #f8f8f8;
+  list-style: none;
+}
+
+.res-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  color: #1b71a6;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.res-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 150rem;
+}
+
+.res-form-section {
+  margin-bottom: 1.6rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.three-col {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.res-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.6rem;
+}

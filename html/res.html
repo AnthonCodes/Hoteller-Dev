@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Hoteller is a cloud based Hotel Property Management System made to make your life as a hotel owner easier."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/res.css" />
+
+    <title>Hotellier PMS &mdash; Cloud</title>
+  </head>
+  <body>
+    <header>
+      <nav role="navigation" class="navbar navbar-default fixed-top">
+        <a href="/" class="navbar-brand">
+          <img
+            src="../img/Logo.webp"
+            alt="hotel logo"
+            class="logo logo-navbar"
+          />
+        </a>
+        <div class="container grid align-self-start">
+          <div class="navbar-search-container">
+            <ul class="navbar-help-list">
+              <li>
+                <ion-icon
+                  name="person-circle"
+                  class="navbar-help-icon"
+                ></ion-icon>
+                <a href="mailto:Dean@hpms.com" class="nav-help-supervisor"
+                  >Dean@hpms.com</a
+                >
+              </li>
+              <li>
+                <ion-icon name="call" class="nav-help-icon"></ion-icon>
+                <a href="#" class="nav-help-link">Employees</a>
+              </li>
+              <li>
+                <ion-icon name="headset" class="nav-help-icon"></ion-icon>
+                <a href="#" class="nav-help-link">Support</a>
+              </li>
+              <li>
+                <ion-icon name="help-circle" class="nav-help-icon"></ion-icon>
+                <a href="#" class="nav-help-link"> Knowledge Base</a>
+              </li>
+            </ul>
+            <form class="nav-help-search">
+              <button type="submit" class="btn btn--search">
+                <ion-icon name="search"></ion-icon> Search Today
+              </button>
+              <input
+                type="text"
+                placeholder="Search for.."
+                name="search"
+                class="search-bar"
+              />
+            </form>
+          </div>
+          <div>
+            <div class="btn--logout-container">
+              <a href="#" class="btn btn--logout">
+                <ion-icon name="power" class="btn--logout-icon"></ion-icon>Log
+                Out
+              </a>
+            </div>
+            <div class="nav-date">10/1/2024</div>
+          </div>
+        </div>
+
+        <nav class="br-flex">
+          <ul class="nav-list nav--main">
+            <li><a href="#" class="nav-link">Reservations</a></li>
+            <li><a href="#" class="nav-link">Groups</a></li>
+            <li><a href="#" class="nav-link">House Chart</a></li>
+            <li><a href="#" class="nav-link">Reports</a></li>
+          </ul>
+        </nav>
+
+        <div class="department-container">
+          <div class="nav-department clip-path-left-point">
+            <button class="btn btn--department clip-path-left-point">
+              Front Office <ion-icon name="chevron-down"></ion-icon>
+            </button>
+          </div>
+          <nav class="nav-department--dropdown">
+            <ul class="department-list">
+              <li><a href="#">Front Office</a></li>
+              <li><a href="#">Housekeeping</a></li>
+              <li><a href="#">Maintenance</a></li>
+              <li><a href="#">Accounting</a></li>
+              <li><a href="#">Management</a></li>
+              <li><a href="#">Admin</a></li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Reservations Sub Nav -->
+    <nav class="br-flex sub">
+      <ul class="nav-list nav--sub">
+        <li><a href="#" class="nav-link">Search</a></li>
+        <li><a href="#" class="nav-link">New Res</a></li>
+        <li><a href="#" class="nav-link">Availability</a></li>
+        <li><a href="#" class="nav-link">Preprint Reg Card</a></li>
+        <li><a href="#" class="nav-link">Wait List</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="reservation-container">
+        <nav class="res-nav">
+          <h2>Guest Information</h2>
+          <ul class="res-nav-list">
+            <li><a href="#">Contact Information</a></li>
+            <li><a href="#">Comments</a></li>
+            <li><a href="#"> Marketing</a></li>
+          </ul>
+          <h2>Reservation Information</h2>
+          <ul class="res-nav-list">
+            <li><a href="#">Stay Details</a></li>
+            <li><a href="#">Rate Information</a></li>
+            <li><a href="#">Add-Ons</a></li>
+          </ul>
+          <h2>Charges and Payment</h2>
+          <ul class="res-nav-list">
+            <li><a href="#">Summary of Charges</a></li>
+            <li><a href="#">Payment Info</a></li>
+            <li><a href="#">Guarantee & Confirmation</a></li>
+          </ul>
+        </nav>
+
+        <form class="res-form">
+          <h2>Contact Information</h2>
+          <div class="res-form-section grid two-col">
+            <div class="res-form-col">
+              <div class="res-field">
+                <label for="guestid">Guest ID No</label>
+                <input type="text" id="guestid" name="guestid" value="" />
+              </div>
+              <div class="res-field">
+                <label for="rewardid">Rewards/Tier</label>
+                <input type="text" id="rewardid" name="rewardid" />
+              </div>
+              <div class="res-field">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" />
+              </div>
+              <div class="res-field">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" />
+              </div>
+              <div class="res-field">
+                <label for="phonenum1">Primary Phone</label>
+                <input type="tel" id="phonenum1" name="phonenum1" />
+              </div>
+              <div class="res-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+              </div>
+            </div>
+
+            <div class="res-form-col">
+              <div class="res-field">
+                <label for="address1">Address 1</label>
+                <input type="text" id="address1" name="address1" />
+              </div>
+              <div class="res-field">
+                <label for="address2">Address 2</label>
+                <input type="text" id="address2" name="address2" />
+              </div>
+              <div class="grid three-col">
+                <div class="res-field">
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" />
+                </div>
+                <div class="res-field">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" />
+                </div>
+                <div class="res-field">
+                  <label for="zip">ZIP</label>
+                  <input type="number" id="zip" name="zip" />
+                </div>
+              </div>
+              <div class="res-field">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="usa">United States</option>
+                  <option value="notusa">Somewhere Else</option>
+                </select>
+              </div>
+              <div class="res-field">
+                <label for="lang">Language</label>
+                <select id="lang" name="lang">
+                  <option value="eng">English</option>
+                  <option value="spn">Spanish</option>
+                  <option value="jp">Japanese</option>
+                </select>
+              </div>
+              <div class="res-field">
+                <label for="profile">Guest Profile</label>
+                <select id="profile" name="profile">
+                  <option value=""></option>
+                  <option value="vip">VIP</option>
+                  <option value="dnr">Do Not Rent</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <h2>Comments</h2>
+          <div class="res-form-section flex-col">
+            <div class="res-field">
+              <label for="comment">Comments</label>
+              <input id="comment" name="comment" />
+            </div>
+            <div class="res-field">
+              <label for="hskpcom">HSKP Comments</label>
+              <input id="hskpcom" name="hskpcom" />
+            </div>
+            <div class="res-field">
+              <label for="intcom">Internal Comments</label>
+              <input id="intcom" name="intcom" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer fixed-bottom">
+      <div class="footer-content">
+        <a href="#" class="footer-logo-link">
+          <img src="/img/Logo.webp" class="footer-logo" />
+        </a>
+        <nav class="footer-contact">
+          <span>Contact Us:</span>
+          <a href="#" class="footer-link">Support</a>
+          <span>|</span>
+          <a href="#" class="footer-link">Sales</a>
+        </nav>
+        <a href="#" class="footer-link">Privacy Policy</a>
+      </div>
+    </footer>
+
+    <!-- ION ICON IMPORT -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
