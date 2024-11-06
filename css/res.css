@@ -1,11 +1,13 @@
 .reservation-container {
-  display: flex;
-  gap: 1rem;
 }
 
 .res-nav {
+  position: fixed;
+  left: 0;
+  max-width: 20rem;
   background: #cccc;
   margin-left: 1rem;
+  border: 1px solid #bbbb;
 }
 
 .res-nav-list {
@@ -25,9 +27,52 @@ h2 {
 }
 
 .res-form {
+  margin-left: 25rem;
+  padding: 0 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   max-width: 150rem;
+  border: 1px solid #cccc;
+}
+
+.res-form-header {
+  padding: 0.4rem 1rem;
+  margin: 0 -1rem;
+  background-color: #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guest-name {
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.res-form-btn-container {
+  display: flex;
+}
+
+.res-form-btn {
+  padding: 0.4rem 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+
+.submit {
+  background: linear-gradient(rgb(160, 228, 124) 0%, rgb(113, 206, 126) 100%);
+}
+
+.delete {
+  background: linear-gradient(#f04126 0%, #c73721 100%);
+}
+
+.delete ion-icon {
+  transform: scale(1.4);
 }
 
 .res-form-section {
